@@ -7,17 +7,17 @@
 
   <?php include 'header.php'; ?>
 
-  <main class="main">
+  <main class="main" style="padding-top: 60px;">
     <?php if ($_COOKIE['user'] == ''): ?>
-      <div class="container">
-        <div class="row" style="flex-grow:1;">
+      <div class="container" style="margin-left: 250px">
+        <div class="row" style="flex-grow:1; text-align: left;">
           <div class="col">
             <br />
             <h1>Вход в аккаунт</h1>
             <br />
             <form action="check.php" method="post">
-              <input type="text" class="form-control" name="name" id="name" placeholder="Введите имя" /><br />
-              <input type="text" class="form-control" name="password" id="password" placeholder="Введите пароль" /><br />
+              <input type="text" class="form-control" name="name" id="name" placeholder="Введите имя" style="width: 300px"/><br />
+              <input type="text" class="form-control" name="password" id="password" placeholder="Введите пароль" style="width: 300px"/><br />
               <button type="submit" class="btn btn-success">Войти</button>
             </form>
             <?php
@@ -26,7 +26,7 @@
             }
             ?>
           </div>
-          <div class="col">
+          <!-- <div class="col">
             <br />
             <h1>Регистрация</h1>
             <br />
@@ -36,7 +36,7 @@
                 disabled /><br />
               <button type="submit" class="btn btn-success" disabled>Зарегистрироваться</button>
             </form>
-          </div>
+          </div> -->
         </div>
       </div>
     <?php else:

@@ -1,0 +1,78 @@
+.book-profile-aside {
+  border-top: 5px solid #157347;
+  border-right: 5px solid #157347;
+  border-left: 5px solid #157347;
+  border-radius: 5px;
+  height: min-content;
+  width: 28%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-profile-aside-item {
+  border-bottom: 5px solid #157347;
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.star-widget {
+  text-align: center;
+  direction: rtl;
+}
+
+.star-widget button {
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 0 1px;
+  color: #ccc;
+  transition: all 0.2s ease;
+}
+
+.star-widget button:hover,
+.star-widget button:focus,
+.star-widget button:active {
+  color: #ffcc00;
+}
+
+.star-widget button:hover ~ button,
+.star-widget button:focus ~ button,
+.star-widget button:active ~ button {
+  color: #ffcc00;
+}
+
+.delete-but,
+.delete-but:active,
+.delete-but:focus {
+  background-color: none;
+  outline: none;
+  opacity: 0;
+  border: none;
+  font-size: 6px;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.delete-but:hover {
+  opacity: 1;
+}
+
+.book-description {
+  padding: 5px 35px 0px 0px;
+  line-height: 1.5;
+}
+
+.book-profile-aside-icon {
+    height: 40px;
+}

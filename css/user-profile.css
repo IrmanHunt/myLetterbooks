@@ -1,0 +1,54 @@
+.user-profile-two-aside {
+  border: 4px solid green;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+
+.user-profile-right-aside {
+  border: 4px solid black;
+  flex: 0.4;
+}
+
+.user-profile-left-adise {
+  border: 4px solid black;
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.user-profile-readlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.user-profile-readlist-info {
+  height: 20px;
+  margin: 10px;
+}
+
+.user-profile-readlist-books-area {
+  width: 88%;
+}
+
+.user-profile-recent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-profile-recent-ul {
+  padding: 5px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 45px;
+  margin-top: 10px;
+  margin-left: 20px;
+}

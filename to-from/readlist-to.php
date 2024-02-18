@@ -9,9 +9,8 @@ $result = mysqli_query($induction, "SELECT * FROM users WHERE name = '" . $_COOK
 $user_id = $result->fetch_assoc()['id'];
 
 
-$result = mysqli_query($induction, "DELETE FROM likes WHERE user_id = $user_id AND book_id = ".$_GET['book_id'].";");
+$result = mysqli_query($induction, "INSERT INTO readlist (user_id, book_id) VALUES (".$user_id.",".$_GET['book_id'].");");
 
-
-header("Location: ./book-profile.php?book_id=".$_GET['book_id']);
+header("Location: /book-profile.php?book_id=".$_GET['book_id']);
 
 ?>
